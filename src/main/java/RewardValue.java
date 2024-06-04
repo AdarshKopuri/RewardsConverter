@@ -15,12 +15,12 @@ public class RewardValue{
 	
 	public Double getCashValue() {
 		
-		return miles*MilesToCash_Ratio;
+		return cashvalue;
 	}
 	
 	public int getMilesValue() {
 		
-		return (int)(cashvalueMilesToCash_Ratio);
+		return (int)(cashvalue/MilesToCash_Ratio);
 	}
 	
 }
