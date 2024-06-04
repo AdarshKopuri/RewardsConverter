@@ -2,7 +2,7 @@
 public class RewardValue{
 	
 	private Double cashvalue;
-	public static final MilesToCash_Ratio=0.0035; 
+	public static final Double MilesToCash_Ratio=0.0035; 
 	
 	public RewardValue(Double cashvalue) {
 		this.cashvalue=cashvalue;
