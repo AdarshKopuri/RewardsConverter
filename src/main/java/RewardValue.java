@@ -2,25 +2,25 @@
 public class RewardValue{
 	
 	private Double cashvalue;
-	private float miles;
+	public static final MilesToCash_Ratio=0.0035; 
 	
 	public RewardValue(Double cashvalue) {
 		this.cashvalue=cashvalue;
 	}
 	
-	public RewardValue(float miles) {
-		this.miles=miles;
+	public RewardValue(int miles) {
+		this.cashvalue=miles*MilesToCash_Ratio;
 	}
 	
 	
 	public Double getCashValue() {
 		
-		return miles/0.0035;
+		return miles*MilesToCash_Ratio;
 	}
 	
-	public Double getMilesValue() {
+	public int getMilesValue() {
 		
-		return cashvalue*0.0035;
+		return (int)(cashvalueMilesToCash_Ratio);
 	}
 	
 }
